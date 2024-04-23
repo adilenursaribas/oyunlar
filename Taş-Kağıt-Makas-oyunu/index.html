@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Taş Kağıt Makas Game</title>
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Taş Kağıt Makas</h1> <!-- Oyun başlığı -->
+    </header>
+    
+    <div class="score-board">
+        <div id="user-label" class="badge">kullanıcı</div> <!-- Kullanıcı etiketi -->
+        <div id="comp-label" class="badge">bilgisayar</div> <!-- Bilgisayar etiketi -->
+        <span id="user-score">0</span>:<span id="comp-score">0</span> <!-- Kullanıcı ve bilgisayarın skorları -->
+    </div>
+    
+    <div class="result">
+        <p>Kağıt kağıt taş. Sen kazandın!</p> <!-- Sonuç mesajı -->
+    </div>
+    
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="moai.png" alt="taş"> <!-- Taş seçeneği -->
+        </div>
+        <div class="choice" id="p">
+            <img src="kagit.jpg" alt="kağıt"> <!-- Kağıt seçeneği -->
+        </div>
+        <div class="choice" id="s">
+            <img src="makkas.jpg" alt="makas"> <!-- Makas seçeneği -->
+        </div>
+    </div>
+
+    <p id="action-message">Hareketini yap. </p> <!-- Oyun mesajları için bir yer -->
+<script src="app.js" type="text/javascript"></script> <!-- JavaScript kodlarının bulunduğu dosya -->
+
+    
+</body>
+</html>

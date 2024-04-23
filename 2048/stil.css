@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Sayfa metni için font ailesini belirle */
+    text-align: center; /* Metni sayfanın ortasına hizala */
+}
+
+hr {
+    width: 500px; /* Ayırıcı çizginin genişliğini belirle */
+}
+
+#board {
+    width: 400px; /* Oyun tahtasının genişliğini belirle */
+    height: 400px; /* Oyun tahtasının yüksekliğini belirle */
+
+    background-color: #cdc1b5; /* Oyun tahtasının arka plan rengini belirle */
+    border: 6px solid #bbada0; /* Oyun tahtası kenarlık rengini ve kalınlığını belirle */
+
+    margin: 0 auto; /* Oyun tahtasını yatayda ortala */
+    display: flex; /* Esnek bir düzen oluştur */
+    flex-wrap: wrap; /* Öğeleri bir satıra sığdıramadığında bir sonraki satıra geç */
+}
+
+.tile {
+    width: 90px; /* Karelerin genişliğini belirle */
+    height: 90px; /* Karelerin yüksekliğini belirle */
+    border: 5px solid #bbada0; /* Karelerin kenarlık rengini ve kalınlığını belirle */
+
+    font-size: 40px; /* Karelerin metin boyutunu belirle */
+    font-weight: bold; /* Karelerin metin kalınlığını belirle */
+    display: flex; /* Esnek bir düzen oluştur */
+    justify-content: center; /* İçeriği yatayda ortala */
+    align-items: center; /* İçeriği dikeyde ortala */
+}
+
+/* Renkli kareler */
+
+.x2 {
+    background-color: #eee4da; /* 2 sayısı karesinin arka plan rengini belirle */
+    color: #727371; /* 2 sayısı karesinin metin rengini belirle */
+}
+
+.x4 {
+    background-color: #ece0ca; /* 4 sayısı karesinin arka plan rengini belirle */
+    color: #727371; /* 4 sayısı karesinin metin rengini belirle */
+}
+
+.x8 {
+    background-color: #f4b17a;/* 8 sayısı karesinin arka plan rengini belirle */
+    color: white;/* 8 sayısı karesinin metin rengini belirle */
+}
+
+.x16{
+    background-color: #f59575;/* 16 sayısı karesinin arka plan rengini belirle */
+    color: white;/* 16 sayısı karesinin metin rengini belirle */
+}
+
+.x32{
+    background-color: #f57c5f;/* 32 sayısı karesinin arka plan rengini belirle */
+    color: white;/* 32 sayısı karesinin metin rengini belirle */
+}
+
+.x64{
+    background-color: #f65d3b;/* 64 sayısı karesinin arka plan rengini belirle */
+    color: white;/* 64 sayısı karesinin metin rengini belirle */
+}
+
+.x128{
+    background-color: #edce71;/* 128 sayısı karesinin arka plan rengini belirle */
+    color: white;/* 128 sayısı karesinin metin rengini belirle */
+}
+
+.x256{
+    background-color: #edcc63;/* 256 sayısı karesinin arka plan rengini belirle */
+    color: white;/* 256 sayısı karesinin metin rengini belirle */
+}
+
+.x512{
+    background-color: #edc651;/* 512 sayısı karesinin arka plan rengini belirle */
+    color: white;/* 512 sayısı karesinin metin rengini belirle */
+}
+
+.x2048{
+    background-color: #ecc230;/* 2048 sayısı karesinin arka plan rengini belirle */
+    color: white;/* 2048 sayısı karesinin metin rengini belirle */
+}
+
+/* Diğer numaralı karelerin stilleri benzer şekilde devam eder */

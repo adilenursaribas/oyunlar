@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Tüm elementler için varsayılan stil ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins; /* Tüm elementler için Poppins fontu kullanılıyor */
+}
+
+/* Sayfa stil ayarları */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #6563ff; /* Sayfa arka plan rengi */
+}
+
+.wrapper {
+    padding: 25px; /* Kutunun iç kenar boşluğu */
+    border-radius: 10px; /* Kutunun kenar yuvarlaklığı */
+    background: #f8f8f8; /* Kutunun arka plan rengi */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Kutunun gölgesi */
+}
+
+.cards, .card .view {
+    display: flex; /* Kartlar ve kart görünümleri flex kullanılarak hizalanır */
+    align-items: center; /* Dikey hizalama */
+    justify-content: center; /* Yatay hizalama */
+}
+
+.cards {
+    height: 400px; /* Kartların yüksekliği */
+    width: 400px; /* Kartların genişliği */
+    flex-wrap: wrap; /* Kartlar sığmadığında alt satıra geçer */
+    justify-content: space-between; /* Kartlar arasında boşluk bırakır */
+}
+
+.cards .card {
+    height: calc(100% / 4 - 10px); /* Kartın yüksekliği (4 sütunlu bir düzende) */
+    width: calc(100% / 4 - 10px); /* Kartın genişliği (4 sütunlu bir düzende) */
+    list-style: none; /* Liste işaretleri gizlenir */
+    cursor: pointer; /* Kartlara fare üzerine gelince el simgesi görünür */
+    user-select: none; /* Kullanıcı seçimini engeller */
+    position: relative; /* Pozisyon */
+    perspective: 1000px; /* 3D dönme efekti için bakış açısı */
+    transform-style: preserve-3d; /* 3D dönme efekti için stil */
+}
+
+.card.shake {
+    animation: shake 0.35s ease-in-out; /* Shake animasyonunu kartlara uygular */
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0); /* Shake animasyonunun başlangıç ve bitiş durumu */
+    }
+    20% {
+        transform: translateX(-13px); /* Shake animasyonunun 1. adımı */
+    }
+    40% {
+        transform: translateX(13px); /* Shake animasyonunun 2. adımı */
+    }
+    60% {
+        transform: translateX(8px); /* Shake animasyonunun 3. adımı */
+    }
+    80% {
+        transform: translateX(8px); /* Shake animasyonunun 4. adımı */
+    }
+}
+
+.card .view {
+    width: 100%; /* Kart görünümünün genişliği */
+    height: 100%; /* Kart görünümünün yüksekliği */
+    position: absolute; /* Mutlak konumlandırma */
+    border-radius: 7px; /* Kartın kenar yuvarlaklığı */
+    background: #fff; /* Kart arka plan rengi */
+    backface-visibility: hidden; /* Kartın arkasının görünmemesi sağlanır */
+    pointer-events: none; /* Kart üzerindeki tıklama etkinliklerini engeller */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Kartın gölgesi */
+    transition: transform 0.25s linear; /* Dönme efekti için geçiş animasyonu */
+}
+
+.card .front-view img {
+    width: 20px; /* Ön görünümdeki resmin genişliği */
+}
+
+.card .back-view img {
+    max-width: 45px; /* Arka görünümdeki resmin maksimum genişliği */
+}
+
+.card .back-view {
+    transform: rotateY(-180deg); /* Kartın arka yüzünü döndürür */
+}
+
+.card.flip .back-view {
+    transform: rotateY(0); /* Kartı döndürüp arka yüzü gösterir */
+}
+
+.card.flip .front-view {
+    transform: rotateY(180deg); /* Kartı döndürüp ön yüzü gösterir */
+}
+
+

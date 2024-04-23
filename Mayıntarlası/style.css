@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Yazı tipini belirler */
+    font-weight: bold; /* Yazı kalınlığını belirler */
+    text-align: center; /* Metni ortalar */
+}
+
+#board {
+    width: 400px; /* Oyun tahtasının genişliğini belirler */
+    height: 400px; /* Oyun tahtasının yüksekliğini belirler */
+    border: 10px solid darkgray; /* Kenarlık kalınlığını ve rengini belirler */
+    background-color: lightgray; /* Arka plan rengini belirler */
+
+    margin: 0 auto; /* Yatayda merkezler */
+    display: flex; /* Flex kutusu olarak düzenler */
+    flex-wrap: wrap; /* Satırlar arasında taşma olursa yeni satıra geçer */
+}
+
+#board div {
+    width: 48px; /* Karelerin genişliğini belirler */
+    height: 48px; /* Karelerin yüksekliğini belirler */
+    border: 1px solid whitesmoke; /* Kare kenarlığını belirler */
+
+    /* Yazı */
+    font-size: 30px; /* Yazı boyutunu belirler */
+    display: flex; /* Flex kutusu olarak düzenler */
+    justify-content: center; /* İçeriği yatayda ortalar */
+    align-items: center; /* İçeriği dikeyde ortalar */
+}
+
+.tile-clicked {
+    background-color: darkgrey; /* Tıklanan karoların arka plan rengini belirler */
+}
+
+.x1 {
+    color: blue; /* 1 mayın varsa metin rengini belirler */
+}
+
+.x2 {
+    color: green; /* 2 mayın varsa metin rengini belirler */
+}
+
+.x3 {
+    color: red; /* 3 mayın varsa metin rengini belirler */
+}
+
+.x4 {
+    color: navy; /* 4 mayın varsa metin rengini belirler */
+}
+
+.x5 {
+    color: brown; /* 5 mayın varsa metin rengini belirler */
+}
+
+.x6 {
+    color: teal; /* 6 mayın varsa metin rengini belirler */
+}
+
+.x7 {
+    color: black; /* 7 mayın varsa metin rengini belirler */
+}
+
+.x8 {
+    color: gray; /* 8 mayın varsa metin rengini belirler */
+}
+
+#flag-button {
+    width: 100px; /* Bayrak düğmesinin genişliğini belirler */
+    height: 50px; /* Bayrak düğmesinin yüksekliğini belirler */
+    font-size: 30px; /* Bayrak düğmesindeki yazı boyutunu belirler */
+    background-color: lightgray; /* Bayrak düğmesinin arka plan rengini belirler */
+    border: none; /* Kenarlık olmaz */
+}

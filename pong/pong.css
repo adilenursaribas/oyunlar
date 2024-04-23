@@ -1,0 +1,11 @@
+/* Sayfanın içeriğini ortala */
+body {
+    text-align: center;
+}
+
+/* Oyun tahtası stilleri */
+#board {
+    background-color: black; /* Siyah arka plan */
+    border-top: 5px solid skyblue; /* Üst kenar için mavi çizgi */
+    border-bottom: 5px solid skyblue; /* Alt kenar için mavi çizgi */
+}

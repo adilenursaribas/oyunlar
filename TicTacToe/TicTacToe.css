@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Sayfa fontunu ayarlar */
+    text-align: center; /* Sayfayı ortalar */
+}
+
+hr {
+    width: 500px; /* Yatay çizginin genişliği */
+    height: 2px; /* Yatay çizginin yüksekliği */
+    background-color: black; /* Yatay çizginin rengi */
+}
+
+#board {
+    width: 450px; /* Oyun tahtasının genişliği */
+    height: 450px; /* Oyun tahtasının yüksekliği */
+    /* background-color: gray; */ /* Oyun tahtası arka plan rengi */
+    margin: 0 auto; /* Tahtayı yatayda ortalar */
+    display: flex; /* Flexbox kullanarak içerik düzenini belirler */
+    flex-wrap: wrap; /* Daha küçük ekranlarda tahtayı sarma */
+}
+ 
+.tile {
+    width: 147px; /* Kare kutunun genişliği */
+    height: 147px; /* Kare kutunun yüksekliği */
+
+    /* Text */
+    font-size: 150px; /* Metin boyutu */
+    display: flex; /* İçeriği düzenlemek için flex kullan */
+    justify-content: center; /* Yatayda merkezle */
+    align-items: center; /* Dikeyde merkezle */
+}
+
+.winner {
+    background-color: lightgray; /* Kazanan kutunun arka plan rengi */
+    color: red; /* Kazanan kutunun metin rengi */
+}
+
+.horizontal-line {
+    border-bottom: 3px solid black; /* Yatay çizgi: Alt kenar boyunca siyah 3 piksel kalınlığında bir çizgi */
+}
+
+.vertical-line {
+    border-right: 3px solid black; /* Dikey çizgi: Sağ kenar boyunca siyah 3 piksel kalınlığında bir çizgi */
+}
